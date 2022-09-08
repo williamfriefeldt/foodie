@@ -1,0 +1,30 @@
+.file-input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.images-container {
+    max-width: 530px;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.label-text {
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 100%;
+    max-width: 535px;
+    height: 500px;
+    margin-top: 30px;
+    display: block;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 20%);
+    -webkit-appearance: none;
+}

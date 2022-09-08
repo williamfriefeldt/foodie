@@ -1,0 +1,15 @@
+.container {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.scaled {
+    transform: scale(1);
+}
