@@ -5,6 +5,7 @@ export const options : google.maps.MapOptions = {
     zoom: 5,
     mapTypeControl: false,
     streetViewControl: false,
+    fullscreenControl: false,
     styles: [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },

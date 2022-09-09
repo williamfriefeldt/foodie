@@ -87,7 +87,7 @@ export default function Post() {
     const initMap = () => {
         const mapElement = document.getElementById("map");
         if(mapElement) {
-            const map =new google.maps.Map(mapElement, {
+            const map = new google.maps.Map(mapElement, {
                 center: {      
                     lat:59.334591, lng:18.063240
                 },

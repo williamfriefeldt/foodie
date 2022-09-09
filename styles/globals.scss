@@ -12,3 +12,7 @@ body {
     display: grid;
     justify-items: center;
 } 
+
+.gm-style iframe + div { 
+  border: none !important; 
+}

@@ -8,8 +8,56 @@
     align-items: center;
     transform: scale(0);
     transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .scaled {
     transform: scale(1);
+}
+
+.content {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 50%;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: max-content;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+    height: 20px;
+}
+
+.title {
+    height: 0px;
+    font-style: italic;
+}
+
+.text {
+    width: 70%;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: -30px;
+}
+
+.button {
+    position: absolute;
+    bottom: 15px;
+    font-size: 15px !important;
+    padding: 5px !important;
+    width: 100px !important;
 }

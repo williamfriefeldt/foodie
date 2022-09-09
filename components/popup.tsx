@@ -1,5 +1,6 @@
 import { Restaurant } from '../pages';
 import styles from '../styles/popup.module.scss';
+import { Button } from './styled/button';
 
 interface PopupProps {
     animated?: boolean;
@@ -15,7 +16,18 @@ export default function Popup({animated, position, restaurant}:PopupProps) {
             left: position[1] - 150,
             backgroundImage: 'url(' + restaurant?.images[0] + ')'
         }}>
-            {restaurant && restaurant.name}
+            <div className={styles.content}>
+                {restaurant && (
+                    <>
+                        <div className={styles.name}>{restaurant.name}</div>
+                        <div className={styles.title}>"{restaurant.title}"</div>
+                        <div className={styles.text}>
+                            {restaurant.text}
+                        </div>
+                    </>
+                )}
+            </div>
+            <Button className={styles.button}>Mera!🤤</Button>
         </div>
-    )
-}
+    ) 
+} 
