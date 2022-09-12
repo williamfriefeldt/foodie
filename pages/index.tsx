@@ -17,9 +17,11 @@ export default function Home() {
   const [restaurants, setRestaurants] = useState<Restaurant[]>();
 
   useEffect(() => {
-    fetch("/api/restaurants")
+    fetch("/api/restaurants", { method: 'GET' })
       .then(res => res.json())
-      .then(data => {setRestaurants(data)})
+      .then(data => {
+        setRestaurants(data)
+      })
   }, []); 
 
   const [mapLoaded, setMapLoaded] = useState(false);
